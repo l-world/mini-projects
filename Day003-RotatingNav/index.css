@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+ul,li{
+    list-style: none;
+}
+body {
+    background-color: #333;
+    color:#222;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow-x:hidden;
+}
+.container{
+    background-color:#fafafa;
+    min-height:100vh;
+    width:100vw;
+    padding:50px;
+    transform-origin: top left;
+    transition:transform 0.5s linear;
+}
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+/* .header{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #ff7979;
+    border-bottom-right-radius:100%;
+    cursor: pointer;
+    transition: transfrom 2s;
+} */
+.header{
+    position:fixed;
+    top:-100px;
+    left: -100px;
+}
+.circle{
+    background-color: #ff7979;
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.circle_btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border:0;
+    font-size: 26px;
+    color:#fff;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#open{
+    background-image:url('./img/bar.svg');
+}
+#close{
+    background-image:url('./img/close.svg');
+}
+
+.circle button:focus{
+    outline:0;
+}
+
+.circle button#close{
+    transform:rotate(90deg);
+    transform-origin: top left;
+}
+
+.container.show-nav .circle{
+    transform: rotate(-70deg)
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+}
+.nav_ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+.nav_item{
+    text-transform: uppercase;
+    color:#fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    /* border: 1px solid red;s */
+}
+.nav_item img{
+    margin-right: 10px;
+}
+
+nav ul li + li.nav_item{
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li.nav_item{
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.45s;
+}
+
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+small{
+    color: #555;
+    font-style: italic;
+}
+.img_dog{
+    width: 100%;
+    margin-top: 20px;
+}
+
+p{
+    margin: 20px 0;
+    color: #333;
+    line-height: 1.5;
+}

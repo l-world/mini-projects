@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(161, 100, 223);
+    overflow: hidden;
+}
+
+.btn{
+    background-color: rebeccapurple;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1.3rem 3rem;
+    border-radius: 5px;
+    margin: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}

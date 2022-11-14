@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8e44ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0
+}
+
+.box{
+    text-align: center;
+    margin-right: 80px;
+}
+.count{
+    margin-top: 10px;
+    font-size: 54px;
+}
+
+
+@media (max-width: 580px){
+    body {
+        flex-direction: column;
+    }
+}

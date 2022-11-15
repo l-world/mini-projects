@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.needle {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+}
+
+.center-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.center-point::after {
+    content: "";
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.mode_btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    margin: 8rem;
+    cursor: pointer;
+    border: none;
+}
+
+.mode_btn:focus {
+    outline: none;
+}
+
+.time {
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.date {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.date span {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: 5px;
+    transition: 1s ease-in-out;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .mode_btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark .date span {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark .clock .hour{
+    background-color: #fff;
+}
+
+.dark .clock .minute{
+    background-color: #fff;
+}

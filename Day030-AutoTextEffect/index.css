@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text{
+    font-size: 54px;
+    text-transform: capitalize;
+}
+.speed{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 1rem;
+}
+.speed input{
+    margin-left: 10px;
+    background-color: lightcoral;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    width: 50px;
+}
+.speed input:focus{
+    outline: none;
+}

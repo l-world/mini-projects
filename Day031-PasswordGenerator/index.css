@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3b3b98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgb(255 255 255 / 20%);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.password-form{
+    margin-top: 20px;
+}
+
+.password-form p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 300px;
+}
+
+.password-form div{
+    position: relative;
+}
+
+.password-form p label{
+    font-size: 16px;
+    font-weight: 100;
+    margin-right: auto;
+}
+
+.password-text{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+}
+.copy-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: #3b3b98;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.password-length{
+    width: 60px; 
+}
+.generator-btn{
+    background-color: #3b3b98;
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0;
+    color:inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+.generator-btn:focus{
+    outline: none;
+}
+
+.generator-btn:active{
+    transform: scale(0.98);
+}

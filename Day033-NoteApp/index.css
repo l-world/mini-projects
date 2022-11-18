@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    background-color: #7bdaf3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add_btn{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #9ec862;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.add_btn:focus{
+    outline: none;
+}
+
+.add_btn:active{
+    transform: scale(0.98);
+}
+
+.note{
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgb(0 0 0 / 10%);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+    transition: .3s linear;
+}
+.note-header{
+    background-color: #9ec862;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.note-header button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+}
+button:focus{
+    outline: none;
+}
+.note-header button:active{
+    transform: scale(1.1);
+}
+
+.textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.no-edit{
+    padding: 20px;
+}
+
+.hidden{
+    display: none;
+}
+

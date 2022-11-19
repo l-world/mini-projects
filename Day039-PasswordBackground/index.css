@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.bg{
+    background: url(https://images.unsplash.com/photo-1556745757-8d76bdb6984b) no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.container{
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 + p{
+    font-weight: 400;
+    margin-top: 5px;
+}
+.form{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form p input{
+    width: 100%;
+    font-size:18px;
+    color: #000;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form p label{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+input::placeholder{
+    color: #ccc;
+}
+
+.btn{
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+

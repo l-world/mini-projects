@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.search-container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    width: 300px;
+}
+
+.header{
+    background-color: lightskyblue;
+    padding: 1.5rem 1rem;
+    color: #fff;
+}
+.header p{
+    font-size: 12px;
+    margin:5px 0 20px
+}
+.search{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.user_list {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.user_list li{
+    padding: 1rem 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.user_list h5{
+    margin-bottom: 5px;
+}
+.avator{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+li.loading{
+    font-weight: 600;
+    font-size: 18px;
+}
+.user_list li.hide {
+    display: none;
+}

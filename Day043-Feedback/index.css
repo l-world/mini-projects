@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 350px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0,0.1);
+    background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+.appraise form{
+    margin: 1.5rem 0;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    border: 0;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.appraise .option{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* .option:hover, */
+.option.active{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0,0.1);
+}
+
+.option label{
+    margin-top: 30px;
+}
+
+.send_btn{
+    background-color: #000;
+    color:#fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.send_btn:active{
+    transform: scale(0.99);
+}
+
+.hide{
+    display: none;
+}
+
+.result{
+    position: relative;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.heart{
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
+.heart::before,
+.heart::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 20px;
+    width: 20px;
+    height: 32px;
+    background-color: red;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after{
+    background-color:red;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.info {
+    margin-top: 50px;
+}
+.info h4{
+    margin: 1.3rem 0;
+    text-transform: capitalize;
+    font-weight: 400;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body{
+    background: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    width:400px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+}
+.container h1{
+    text-align: center;
+}
+.register_form div{
+    position: relative;
+    padding: 15px 0;
+}
+.register_form label{
+    display: block;
+    text-transform: capitalize;
+    color: #666;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.register_form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+.register_form input:focus{
+    outline: 2px solid cadetblue;
+}
+.register_form input::placeholder{
+    color: #666;
+}
+
+.register_form input.success{
+    border-color: var(--success-color);
+}
+
+.register_form input.error{
+    border-color: var(--error-color);
+}
+
+.register_form div small{
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.register_form input.error + small{
+    visibility: visible;
+}
+
+.submit{
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+    background-color: lightsalmon;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 2px solid lightsalmon;
+}
